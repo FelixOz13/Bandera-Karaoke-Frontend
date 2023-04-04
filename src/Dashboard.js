@@ -26,13 +26,12 @@ export default function Dashboard({ code }) {
   useEffect(() => {
     if (!playingTrack) return
 
-    axios
-      .get("http://localhost:8889/lyrics", {
-        params: {
-          track: playingTrack.title,
-          artist: playingTrack.artist,
-        },
-      })
+    axios.get("/lyrics", {
+  params: {
+    track: playingTrack.title,
+    artist: playingTrack.artist,
+  },
+})
       .then(res => {
         setLyrics(res.data.lyrics)
       })
