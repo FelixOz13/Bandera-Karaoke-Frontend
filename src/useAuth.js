@@ -27,7 +27,7 @@ export default function useAuth(code) {
     if (!refreshToken || !expiresIn) return
     const interval = setInterval(() => {
       axios
-        .post("http://localhost:8889/refresh", {
+        .post("https://bandera-karaoke.herokuapp.com/refresh", {
           refreshToken,
         })
         .then(res => {
