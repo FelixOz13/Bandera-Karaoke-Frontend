@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  max-width: fit-content;
+  background-size: 100%;
+
+}
+
+.karaoke-title {
+  color: goldenrod;
+  font-family: "Henny Penny";
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 100px;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  width: 2rem;
+  background-color: black;
+  ;
+}
+
+
+
+::-webkit-scrollbar-thumb {
+  background-color: goldenrod;
+  border-radius: 4px;
+
+}
+
+.navbar-logo {
+  border-width: 4px;
+  border-color: #dc9e02;
+  border-style: groove;
+  margin-left: -15px;
+  margin-top: -8px;
+}
+
+.navbar {
+  background: black;
+  height: 80px;
+
+}
+
+.navbar-logo {
+  position: absolute;
+  top: 5px;
+  left: 80px;
+  transform: translate(5%, 50%);
+
+
+}
