@@ -9,10 +9,9 @@ export default function useAuth(code) {
   console.log(refreshToken)
 
   useEffect(() => {
-    axios
-      .post("http://localhost:8889/login", {
-        code,
-      })
+  axios.post("https://bandera-karaoke.herokuapp.com/login", {
+    code,
+  })
       .then(res => {
         setAccessToken(res.data.accessToken)
         setRefreshToken(res.data.refreshToken)
